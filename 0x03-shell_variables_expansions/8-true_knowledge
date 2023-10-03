@@ -1,2 +1,2 @@
 #!/bin/bash
-printf $((128 + $TRUEKNOWLEDGE)) \n \n 
+printf "%d\n" $((128 + $TRUEKNOWLEDGE)) 

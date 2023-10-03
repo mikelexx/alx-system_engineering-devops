@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((234 +3 ))
+printf "$((128 + TRUEKNOWLEDGE)) \n"

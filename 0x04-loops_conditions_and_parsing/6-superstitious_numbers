@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Write a Bash script that displays numbers from 1 to 20 and:
+#Write a bash script that displays numbers from 1 to 20 and:
 
 #displays 4 and then bad luck from China for the 4th loop iteration
 #displays 9 and then bad luck from Japan for the 9th loop iteration
@@ -10,13 +10,13 @@ do
 	echo "${i}"
 	case ${i} in
 		4)
-			echo "Bad luck from China"
+			echo "bad luck from China"
 			;;
 		9)
-			echo "Bad luck from Japan"
+			echo "bad luck from Japan"
 		;;
 	17)
-		echo "Bad luck from Italy"
+		echo "bad luck from Italy"
 		;;
 	*)
 		;;

@@ -8,15 +8,18 @@
 while ((i <= 20))
 do
 	echo "${i}"
-	if ((i == 4))
-	then
-		echo "Bad luck from China"
-	elif ((i == 9))
-	then 
-		echo "Bad luck from Japan"
-	elif ((i == 17))
-	then
+	case ${i} in
+		4)
+			echo "Bad luck from China"
+			;;
+		9)
+			echo "Bad luck from Japan"
+		;;
+	17)
 		echo "Bad luck from Italy"
-	fi
-	((i++))
-done	
+		;;
+	*)
+		;;
+esac
+((i++))
+done

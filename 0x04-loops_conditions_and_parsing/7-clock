@@ -6,7 +6,7 @@
 #Requirements:
 #
 #You must use the while loop (for and until are forbidden)
-((h==0))
+((h=0))
 while ((h < 13))
 do
 	echo "Hour: ${h}"

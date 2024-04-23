@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Update package index
-apt-get update
+apt-get -y upgrade > /dev/null
 
 # Install Nginx
-apt-get -y install nginx
+apt-get -y install nginx > /dev/null
 
 # Create directories and files
 mkdir -p /var/www/html
@@ -32,4 +32,4 @@ server {
 EOF
 
 # Restart Nginx to apply changes
-service nginx restart
+service nginx start

@@ -10,7 +10,6 @@ sed -i "s|try_files \$uri \$uri/ =404;|return 301 https://www.youtube.com/watch?
 sed -i "/^\tserver_name _;/a \
 	\\ \terror_page 404 /error_404.html;\n \
 	location = /custom_404.html {\n \
-         \troot /var/www/html;\n \
          \tinternal;\n \
      \t}" /etc/nginx/sites-available/default
 service nginx start

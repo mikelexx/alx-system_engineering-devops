@@ -2,6 +2,6 @@
 #installing nginx web server
 apt-get -y upgrade > /dev/null
 apt-get -y install nginx > /dev/null
-mkdir -p mkdir /var/www/html
+mkdir -p /var/www/html
 echo "Hello World!" > /var/www/html/index.html
 service nginx start

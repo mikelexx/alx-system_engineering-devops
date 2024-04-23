@@ -133,6 +133,7 @@ Requirement:
 - configure your DNS records with an A entry so that your root domain points to your web-01 IP address Warning: the propagation of your records can take time (~1-2 hours)
 - go to your profile and enter your domain in the Project website url field
 Example:
+
 ```
 sylvain@ubuntu$ cat 2-setup_a_domain_name
 myschool.tech

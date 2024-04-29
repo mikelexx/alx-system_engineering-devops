@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #installing nginx web server and configuring redirect
-#apt-get -y upgrade
+apt-get -y upgrade
 apt-get -y install nginx 
 mkdir -p  /var/www/html
 echo "Hello World!" > /var/www/html/index.html

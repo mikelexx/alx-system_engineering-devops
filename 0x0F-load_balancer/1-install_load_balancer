@@ -21,3 +21,4 @@ backend web-02
   balance roundrobin
   server 54.146.59.67 check
 EOF
+sudo service haproxy restart

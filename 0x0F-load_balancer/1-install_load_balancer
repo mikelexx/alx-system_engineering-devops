@@ -12,7 +12,7 @@ frontend  myfrontend
 backend web-servers
   mode http
   balance roundrobin
-  server 54.209.136.208:80  check
-  server 54.146.59.67:80 check
+  server 531460-web-01 54.209.136.208:80 check
+  server 531460-web-02 54.146.59.67:80 check
 EOF
 sudo service haproxy restart

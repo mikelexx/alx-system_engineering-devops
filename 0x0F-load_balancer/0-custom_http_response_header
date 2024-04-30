@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Configure Nginx so that its HTTP response contains a custom header (on web-01 and web-02)
-sudo apt-get-update -y
-sudo apt-get-install -y nginx
+sudo apt-get -y update
+sudo apt-get -y  install nginx
 #sudo mkdir -p /var/www/html
 #echo "Hello World!" > /var/www/html/index.html
 sudo sed -i "/server {/a\\

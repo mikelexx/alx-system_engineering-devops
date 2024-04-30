@@ -2,6 +2,8 @@
 # Configure Nginx so that its HTTP response contains a custom header (on web-01 and web-02)
 sudo apt-get-update -y
 sudo apt-get-install -y 
+sudo mkdir -p /var/www/html
+sudo echo "Hello World!" > /var/www/html/index.html
 sudo sed -i "/server {/a\\
 	add_header X-Served-By \$host;
 	" /etc/nginx/sites-available/default

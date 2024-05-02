@@ -11,8 +11,8 @@
 #EOF
 configure ()
 {
-	if [[ -n $1 ]]; then
-		if [[ -n $2 ]]
+	if [[ -n "$1" ]]; then
+		if [[ -n "$2" ]]
 		then
 			hostname="$2.$1"
 			result=$(dig "$hostname" | awk "/^$hostname/{print}")

@@ -10,8 +10,7 @@
 #54.209.136.208	web-01.murithimichael.tech	
 #EOF
 configure ()
-{ 	
-	subdomains=("www" "lb-01" "web-01" "web-02")
+{
 	if [[ -n "$1" ]]; then
 		if [[ -n "$2" ]]
 		then
@@ -21,7 +20,7 @@ configure ()
 			destination=$(echo "$result" | awk '{print $5}')
 			echo "The subdomain $2 is a $record_type record and points to $destination"
 		else
-			for sub in "${subdomains[@]}"
+			for sub in "www" "lb-01" "web-01" "web-02"
 			do
 				hostname="$sub.$1"
 				result=$(dig "$hostname" | awk "/^$hostname/{print}")

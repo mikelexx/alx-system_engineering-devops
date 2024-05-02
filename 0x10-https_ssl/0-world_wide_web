@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
-#Configure your domain zone so that the subdomain www points to your load-balancer IP (lb-01).
-#Let’s also add other subdomains to make our life easier, and write a Bash script that will display information about subdomains.
-#cat <<EOF>> /etc/hosts
-#100.25.37.157	www.murithimichael.tech		
-#100.25.37.157	lb-01.murithimichael.tech	
-#54.146.59.67	web-02.murithimichael.tech	
-#54.209.136.208	web-01.murithimichael.tech	
-#EOF
+#Configure your domain zone so that the subdomain www points to 
+#your load-balancer IP (lb-01).
+#Let’s also add other subdomains to make our life easier, 
+#and write a Bash script that will display information about subdomains.
+cat <<EOF>> /etc/hosts
+100.25.37.157	www.murithimichael.tech		
+100.25.37.157	lb-01.murithimichael.tech	
+54.146.59.67	web-02.murithimichael.tech	
+54.209.136.208	web-01.murithimichael.tech	
+EOF
 configure ()
 {
 	if [[ -n $1 ]]; then

@@ -6,9 +6,13 @@ Read or watch:
 
 - [What is HTTPS?](https://intranet.alxswe.com/rltoken/XT1BAiBL3Jpq1bn1q6IYXQ)
 - [What are the 2 main elements that SSL is providing](https://intranet.alxswe.com/rltoken/STj5WkAPACBxOvwB77Ycrw)
-- [HAProxy SSL termination on Ubuntu16.04](https://intranet.alxswe.com/rltoken/asrMHTWJxWQ2x-Sn6snHow)
+- [HAProxy SSL termination on Ubuntu16.04](https://www.digitalocean.com/community/tutorials/how-to-secure-haproxy-with-let-s-encrypt-on-ubuntu-14-04)
 - [SSL termination](https://intranet.alxswe.com/rltoken/CKUICfppIWI6UC0coEMB8g)
 - [Bash function](https://intranet.alxswe.com/rltoken/zPjZ7-eSSQsLFsGA16C1HQ)
+- [how to obtain/renew ssl certificate using certbot](https://www.digitalocean.com/community/tutorials/how-to-use-certbot-standalone-mode-to-retrieve-let-s-encrypt-ssl-certificates-on-ubuntu-16-04)
+- [reqadd vs set-header on haproxy](https://stackoverflow.com/questions/51928504/x-forwarded-proto-https-in-frontend-or-backend-haproxy)
+
+
 man or help:
 
 `awk`
@@ -115,3 +119,4 @@ Holberton School for the win!
 sylvain@ubuntu$
 ```
 File: `1-haproxy_ssl_termination`
+

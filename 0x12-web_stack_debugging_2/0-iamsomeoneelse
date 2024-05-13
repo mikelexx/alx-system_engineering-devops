@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# this script runs command i.e whoami depending on user entered.
+sudo -u "$1" whoami

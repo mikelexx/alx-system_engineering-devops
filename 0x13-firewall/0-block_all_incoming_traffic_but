@@ -1,5 +1,6 @@
 sudo apt install ufw
-sudo ufw limit 22/tcp
-sudo ufw limit 443/tcp
-sudo ufw limit 80/tcp
+sudo ufw default deny incoming
+sudo ufw limit 22
+sudo ufw limit 443
+sudo ufw limit 80
 sudo ufw enable

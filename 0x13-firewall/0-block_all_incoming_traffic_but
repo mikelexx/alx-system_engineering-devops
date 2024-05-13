@@ -1,6 +1,5 @@
 sudo apt install ufw
-sudo ufw allow ssh
-sudo ufw limit 443
-sudo ufw limit 80
-sudo ufw limit 22
+sudo ufw limit 22/tcp
+sudo ufw limit 443/tcp
+sudo ufw limit 80/tcp
 sudo ufw enable

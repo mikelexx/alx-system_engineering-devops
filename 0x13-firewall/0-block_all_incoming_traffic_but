@@ -1,5 +1,4 @@
 sudo apt install ufw
-sudo ufw default deny incoming
 sudo ufw limit 22
 sudo ufw limit 443
 sudo ufw limit 80

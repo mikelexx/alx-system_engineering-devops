@@ -17,7 +17,7 @@ if __name__ == "__main__":
                 employee_id))
         user = json.loads(user_response.text)
         if user.get("id") == employee_id:
-            employee_name = user.get("name")
+            employee_name = user.get("username")
 
         todos_response = requests.get(
             "https://jsonplaceholder.typicode.com/todos/")

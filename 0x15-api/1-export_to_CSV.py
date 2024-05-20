@@ -26,7 +26,7 @@ if __name__ == "__main__":
             if todo["userId"] == employee_id:
                 employee_todos.append(todo)
         filename = "{}.csv".format(employee_id)
-        with open(filename, "w", newline='') as f:
+        with open(filename, "w") as f:
             csv_writer = csv.writer(f, quoting=csv.QUOTE_ALL)
             for todo in employee_todos:
                 record = [

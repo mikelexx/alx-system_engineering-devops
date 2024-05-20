@@ -2,6 +2,7 @@ Concepts
 For this project, we expect you to look at this concept:
 
 - [Portfolio Project Deeper Overview](https://intranet.alxswe.com/concepts/102042)
+
 Background Context
 
 
@@ -18,7 +19,9 @@ This is a perfect example of a task that is not suited for Bash scripting, so le
 - [What is a REST API](https://intranet.alxswe.com/rltoken/fA164QWEnZxaSngBD3EPRQ)
 - [What are microservices](https://intranet.alxswe.com/rltoken/n4h77IbBuDxTE3bhes_AyQ)
 - [PEP8 Python style - having a clean code respecting style guide is really appreciated in the industry](https://intranet.alxswe.com/rltoken/b7V1ROY6kSRxDDKnsJoqxg)
+
 **Learning Objectives**
+
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 General

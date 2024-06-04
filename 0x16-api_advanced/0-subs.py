@@ -3,9 +3,6 @@
 Contains function for retrieving subscribers from subreddit.
 """
 import requests
-import sys
-
-subreddit = sys.argv[1]
 
 
 def number_of_subscribers(subreddit):

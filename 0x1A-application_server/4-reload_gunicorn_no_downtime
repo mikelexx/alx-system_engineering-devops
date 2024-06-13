@@ -1,3 +1,18 @@
 #!/usr/bin/env bash
 # gracefully reloads gunicorn 
-ps aux | grep gunicorn | awk '{ print $2 }' | xargs kill -HUP
+Port=5003
+pid=`ps ax | grep gunicorn | grep $Port | awk '{print $2}' | head -n 1`
+if [ -z "$pid" ]; then
+  echo "no gunicorn deamon on port $Port"
+else
+  kill -HUP $pid
+  echo "killed gunicorn deamon on port $Port"
+fi
+Port=5002
+pid=`ps ax | grep gunicorn | grep $Port | awk '{print $2}' | head -n 1`
+if [ -z "$pid" ]; then
+  echo "no gunicorn deamon on port $Port"
+else
+  kill -HUP $pid
+  echo "killed gunicorn deamon on port $Port"
+fi
